@@ -1,0 +1,34 @@
+{% extends "base.html" %}
+
+{% block main %}
+<div id ="bio">
+    <img src ="{{url_for('static', filename='images/profile pic.jpg')}}"/>
+    <h2> Matilda Stilinskie</h2>
+    <h6> @mstyles </h6>
+    <h6> Venice, Italy </h6>
+    <h6> Joined {{ date_joined}}</h6>
+</div>
+
+<div class='details'>
+    <p> I am an interior designer, and the owner of Design Your Life. A leading interior design company in Venice, Italy,
+        that transforms our clients' wildest dreams into reality. I like to draw and paint in my spare time. I also love to
+        cook and enjoy recreating dishes from across the world.
+    </p>
+</div>
+<div id="stats">
+    <div id ="posts">
+        <p id="figure"> 156 </p>
+        <p> Posts </p>
+    </div>
+    <div id ="following">
+        <p id="figure"> 192 </p>
+        <p> Following </p>
+    </div>
+    <div id ="followers">
+        <p id="figure"> 2.1k</p>
+        <p> Followers </p>
+    </div>
+</div>   
+<button type ="submit" class ="follow-btn"> Follow </button>
+
+{% endblock %}
